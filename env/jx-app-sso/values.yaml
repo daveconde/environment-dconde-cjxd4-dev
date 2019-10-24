@@ -4,13 +4,7 @@ dex:
       config:
         clientID: vault:gitOps/daveconde/environment-dconde-cjxd4-dev/dex-connectors-github-config:clientID
         clientSecret: vault:gitOps/daveconde/environment-dconde-cjxd4-dev/dex-connectors-github-config:clientSecret
-        id: google
-        issuer: https://accounts.google.com
-        name: Google
-        type: oidc
+        name: GitHub
+        type: github
   domain: jenkins-x.rocks
-enabledConnector: Google
-groups:
-  committer: test@jenkins-x.rocks
-  owner: test@jenkins-x.rocks
-  viewer: test@jenkins-x.rocks
+enabledConnector: GitHub
