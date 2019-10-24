@@ -17,13 +17,13 @@ cluster:
   zone: europe-west1-c
 environments:
 - ingress:
-    domain: 104.155.98.235.nip.io
-    externalDNS: false
+    domain: cjxd4.dconde.jenkins-x.rocks
+    externalDNS: true
     namespaceSubDomain: -jx.
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: "dconde@cloudbees.com"
+      enabled: true
+      production: true
   key: dev
 - ingress:
     domain: ""
@@ -44,14 +44,6 @@ environments:
       production: false
   key: production
 gitops: true
-ingress:
-  domain: 104.155.98.235.nip.io
-  externalDNS: false
-  namespaceSubDomain: -jx.
-  tls:
-    email: ""
-    enabled: false
-    production: false
 kaniko: true
 secretStorage: vault
 storage:
